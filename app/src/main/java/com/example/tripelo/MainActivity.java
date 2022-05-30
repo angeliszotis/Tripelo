@@ -1,0 +1,120 @@
+package com.example.tripelo;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.room.Room;
+//import com.example.tripelo.RoomDB;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.tripelo.RoomDB.MyAppDatabase;
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.datepicker.MaterialTextInputPicker;
+import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+public class MainActivity extends AppCompatActivity {
+
+    public static MyAppDatabase myAppDatabase;
+    public static FirebaseFirestore dbf;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        //DB
+        myAppDatabase = Room.databaseBuilder(getApplicationContext(),MyAppDatabase.class,"db").allowMainThreadQueries().build();
+         dbf = FirebaseFirestore.getInstance();
+
+        //TopBar
+        MaterialToolbar toolbar = findViewById(R.id.topAppBar);
+        DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
+        NavigationView navigationView = findViewById(R.id.navigation_view);
+
+        TextView text = findViewById(R.id.hometext);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+
+                int id = item.getItemId();
+                item.setChecked(true);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                switch (id)
+                {
+
+                    case R.id.nav_home:
+                        replaceFragment(new HomeFragment());
+                        text.setText("Packet Trips");
+                        Toast.makeText(MainActivity.this, "Home is Clicked", Toast.LENGTH_SHORT).show();break;
+                    case R.id.nav_join:
+                        replaceFragment(new JoinFragment());
+                        text.setText("Join");
+
+                        Toast.makeText(MainActivity.this, "Join is Clicked", Toast.LENGTH_SHORT).show();break;
+                    case R.id.nav_create:
+                        replaceFragment(new CreateFragment());
+                        text.setText("Create Entry");
+                        Toast.makeText(MainActivity.this, "Create is Clicked", Toast.LENGTH_SHORT).show();break;
+
+
+                    case R.id.nav_update:
+                        replaceFragment(new UpdateFragment());
+                        text.setText("Update Entry");
+                        Toast.makeText(MainActivity.this, "Update is Clicked", Toast.LENGTH_SHORT).show();break;
+
+                    case R.id.nav_delete_entrys:
+                        replaceFragment(new DeleteFragment());
+                        text.setText("Delete Entrys");
+                        Toast.makeText(MainActivity.this, "Delete is Clicked", Toast.LENGTH_SHORT).show();break;
+                    case R.id.nav_delete_joins:
+                        replaceFragment(new DeleteMyJoinsFragment());
+                        text.setText("Delete Joins");
+                        Toast.makeText(MainActivity.this, "Update is Clicked", Toast.LENGTH_SHORT).show();break;
+                    case R.id.nav_show_my_joins:
+                        replaceFragment(new ShowMyJoinsFragment());
+                        text.setText("My Joins");
+                        Toast.makeText(MainActivity.this, "Update is Clicked", Toast.LENGTH_SHORT).show();break;
+                    case R.id.nav_info:
+                        replaceFragment(new InfoFragment());
+                        text.setText("Info");
+                        Toast.makeText(MainActivity.this, "Info is Clicked", Toast.LENGTH_SHORT).show();break;
+
+
+
+
+                }
+                return true;
+            }
+        });
+    }
+
+    private void replaceFragment(Fragment fragment){
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frameLayout,fragment).commit();
+
+    }
+
+
+}

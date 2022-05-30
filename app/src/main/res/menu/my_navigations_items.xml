@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_directions_bus_24"
+        android:title="Packet Trip"/>
+
+        <item
+            android:id="@+id/nav_join"
+            android:icon="@drawable/ic_baseline_emoji_people_24"
+            android:title="Join"/>
+        <item
+            android:id="@+id/nav_show_my_joins"
+            android:icon="@drawable/ic_baseline_person_pin_circle_24"
+            android:title="My Joins"/>
+
+
+    <item
+        android:id="@+id/nav_create"
+        android:icon="@drawable/ic_baseline_create_24"
+        android:title="Create Entry"/>
+
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/ic_baseline_system_update_alt_24"
+            android:title="Update Entry"/>
+
+
+        <item
+            android:id="@+id/nav_delete_entrys"
+            android:icon="@drawable/ic_baseline_delete_24"
+            android:title="Delete Entry"/>
+
+        <item
+            android:id="@+id/nav_delete_joins"
+            android:icon="@drawable/ic_baseline_delete_24"
+            android:title="Delete Join"/>
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="Info"/>
+
+
+</group>
+
+
+</menu>

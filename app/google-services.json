@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "809016387435",
+    "project_id": "tripelo-fb6db",
+    "storage_bucket": "tripelo-fb6db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809016387435:android:75df90be773898872f0e2e",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809016387435-8a2orc7rsd6bfn82rqdri7ef5tor4pun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6Llb5qsNsaO51_TYjOqyVcwHcpAGuk2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809016387435-8a2orc7rsd6bfn82rqdri7ef5tor4pun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809016387435:android:3a41e5e6ac16a2f72f0e2e",
+        "android_client_info": {
+          "package_name": "com.example.tripelo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809016387435-8a2orc7rsd6bfn82rqdri7ef5tor4pun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6Llb5qsNsaO51_TYjOqyVcwHcpAGuk2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809016387435-8a2orc7rsd6bfn82rqdri7ef5tor4pun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
