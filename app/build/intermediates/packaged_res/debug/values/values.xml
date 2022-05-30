@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="info_array">
+        <item> Welcome to Tripelo info page.</item>
+        <item> This app is for Collage lesson.</item>
+        <item> Packet Trip : There you can find all trips that are ready to join.</item>
+        <item> Join : There you can join in a trip, you put your data and press the button..</item>
+        <item> Joins: There you can join in a trip, you put your data and press the button.</item>
+        <item> My Joins: There you can see all the joins and scrolling down.</item>
+        <item> Create Entry: There you put data at Travel Agency fields first and after suggest trip press the button to create that entries, after you set again the ID of Travel Agency and Suggest Trip then you put data at Packet trip and press button create then you create a full Packet Trip.
+        </item>
+        <item> Update Entry : There you can Update your entry, fill the texts with data and click update/</item>
+        <item> Delete Entry: There you delete your entries, fill the ID and press delete.</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="cyan">#793685</color>
+    <color name="lightgrey">#D3D3D3</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Tripelo</string>
+    <string name="city">City</string>
+    <string name="default_web_client_id" translatable="false">809016387435-8a2orc7rsd6bfn82rqdri7ef5tor4pun.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">809016387435</string>
+    <string name="google_api_key" translatable="false">AIzaSyB6Llb5qsNsaO51_TYjOqyVcwHcpAGuk2Y</string>
+    <string name="google_app_id" translatable="false">1:809016387435:android:3a41e5e6ac16a2f72f0e2e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB6Llb5qsNsaO51_TYjOqyVcwHcpAGuk2Y</string>
+    <string name="google_storage_bucket" translatable="false">tripelo-fb6db.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="project_id" translatable="false">tripelo-fb6db</string>
+    <style name="Theme.Tripelo" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        
+    </style>
+    <style name="line">
+        <item name="backgroundColor">@color/lightgrey</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_height">1dp</item>
+        
+    </style>
+</resources>

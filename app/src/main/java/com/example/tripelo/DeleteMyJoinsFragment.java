@@ -99,6 +99,8 @@ public class DeleteMyJoinsFragment extends Fragment {
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
+           // if(Integer.parseInt(id.getText().toString()) ==0){ Toast.makeText(getActivity(),"ID must be 1 and up",Toast.LENGTH_LONG);}
+
                 if (!id.getText().toString().isEmpty()) {
                     fillData(Integer.parseInt(id.getText().toString()));
                 }
@@ -125,13 +127,14 @@ public class DeleteMyJoinsFragment extends Fragment {
 
        // MainActivity.dbf.collection("join").document("ida").removeValue();
 
-        MainActivity.dbf.collection("join").document("ida")
+        MainActivity.dbf.collection("join").document(String.valueOf(ida))
                 .delete()
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
 
                         Toast.makeText(getActivity(), "Join Deleted Succefuly!",Toast.LENGTH_LONG).show();
+                        clearText();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
@@ -140,6 +143,7 @@ public class DeleteMyJoinsFragment extends Fragment {
                         Toast.makeText(getActivity(), "Join Deleted Fail!",Toast.LENGTH_LONG).show();
                     }
                 });
+
 
     }
 
@@ -217,4 +221,13 @@ public class DeleteMyJoinsFragment extends Fragment {
 
 
 }
+ public void clearText(){
+
+     name.setText("");
+     surname.setText("");
+     hotel.setText("");
+     price.setText( "");
+     start_time.setText("");
+     country.setText("");
+ }
 }

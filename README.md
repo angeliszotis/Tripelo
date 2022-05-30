@@ -1,2 +1,1 @@
 # Tripelo
-Android Collage project

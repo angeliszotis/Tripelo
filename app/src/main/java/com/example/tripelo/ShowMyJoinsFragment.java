@@ -100,8 +100,8 @@ public class ShowMyJoinsFragment extends Fragment {
                     result+= "Id: " + id + "\nFull name: " + name +" "+ surname + "\n" +
                             "Hotel: " + hotel+ "\n"+
                             "Packet Id: "+ptid + "\n"+
-                            "Country: "+country +" Start Time: "+start_time+"\n"+
-                             "price: "+price+"\n\n";
+                            "City: "+country +" Start Time: "+start_time+"\n"+
+                            "Price: "+price+"\n\n";
                 }
                 text.setText(result);
             }

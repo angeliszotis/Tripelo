@@ -93,7 +93,7 @@ public class HomeFragment extends Fragment {
                 String title = i.getTitle();
                 String time = i.getTime();
                 String price = i.getPrice();
-                save = save + "id:" + String.valueOf(id) + "\n" + "Title:" + title + "\n" + "Start Time:" + time + "\n" + "Price:" + price + "\n\n"+ System.getProperty("line.separator");
+                save = save + "id: " + String.valueOf(id) + "\n" + "City: " + title + "\n" + "Start Time: " + time + "\n" + "Price: " + price +" euro" + "\n\n"+ System.getProperty("line.separator");
 
 
         }

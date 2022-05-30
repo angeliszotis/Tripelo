@@ -3,13 +3,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="city">City</string>
-    <string name="info">Welcome to our app.
-This app is for Collage lesson.
-Packet Trip : There you can find all trips that are ready to join.
-Join : There you can join in a trip, you put your data and press the button.
-My Joins: There you can see all the joins and scrolling down.
-Create Entry: There you put data at Travel Agency fields first and after suggest trip press the button to create that entries, after you set again the ID of Travel Agency and Suggest Trip then you put data at Packet trip and press button create then you create a full Packet Trip.
-Update Entry : There you can Update your entry, fill the texts with data and click update/
-Delete Entry: There you delete your entries, fill the ID and press delete.
-Info: you check info here.</string>
-</resources>
+
+    <string-array name="info_array">
+        <item> Welcome to Tripelo info page.</item>
+        <item> This app is for Collage lesson.</item>
+        <item> Packet Trip : There you can find all trips that are ready to join.</item>
+        <item> Join : There you can join in a trip, you put your data and press the button..</item>
+        <item> Joins: There you can join in a trip, you put your data and press the button.</item>
+        <item> My Joins: There you can see all the joins and scrolling down.</item>
+        <item> Create Entry: There you put data at Travel Agency fields first and after suggest trip press the button to create that entries, after you set again the ID of Travel Agency and Suggest Trip then you put data at Packet trip and press button create then you create a full Packet Trip.
+        </item>
+        <item> Update Entry : There you can Update your entry, fill the texts with data and click update/</item>
+        <item> Delete Entry: There you delete your entries, fill the ID and press delete.</item>
+    </string-array>
+    </resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">809016387435-8a2orc7rsd6bfn82rqdri7ef5tor4pun.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">809016387435</string>
+    <string name="google_api_key" translatable="false">AIzaSyB6Llb5qsNsaO51_TYjOqyVcwHcpAGuk2Y</string>
+    <string name="google_app_id" translatable="false">1:809016387435:android:3a41e5e6ac16a2f72f0e2e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB6Llb5qsNsaO51_TYjOqyVcwHcpAGuk2Y</string>
+    <string name="google_storage_bucket" translatable="false">tripelo-fb6db.appspot.com</string>
+    <string name="project_id" translatable="false">tripelo-fb6db</string>
+</resources>
